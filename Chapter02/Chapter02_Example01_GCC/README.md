@@ -17,9 +17,9 @@ Files related to Example01 (**Compiling C++ natively with GCC**) from Chapter02.
 2. Run `step02_compile_source.sh` to generate the binary using GCC
 3. Run `step03_execute_the_binary.sh` to execute the binary
 
-**Optional:** Run `step00_clean_build_files.sh` to completely clean the build process if you want to start it again from the scratch.
-
 ## Recommendations
+
+Run `step00_clean_build_files.sh` to completely clean the build process if you want to start it again from the scratch.
 
 Analyze the commands written in the `.sh` files.
 

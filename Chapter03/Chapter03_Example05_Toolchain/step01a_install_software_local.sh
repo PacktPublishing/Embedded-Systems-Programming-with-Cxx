@@ -9,5 +9,5 @@ if [ -d "/etc/apt" ]; then
     pip3 install conan
     conan profile detect
 else
-    echo "Please manually install gcc, cmake, conan and ninja."
+    echo "Please manually install gcc, cmake, ninja, and conan."
 fi

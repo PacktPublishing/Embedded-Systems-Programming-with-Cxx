@@ -12,10 +12,12 @@ Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and
 * `conan-jetson.profile`: Conan profile for Jetson Nano
 * `conan-raspberry.profile`: Conan profile for Raspberry Pi
 * `step00_clean_build_files.sh`: Script to clean the previous build
-* `step01_install_software.sh`: Script to install required software
+* `step01a_install_software.sh`: Script to install required software for local build
+* `step01b_install_software.sh`: Script to install required software for Jetson Nano build
+* `step01c_install_software.sh`: Script to install required software for Raspberry Pi build
 * `step02a_install_dependencies_local.sh.`: Script to build and install required dependencies for local build
-* `step02b_install_dependencies_jetson.sh.`: Script to build and install required dependencies for Jetson Nano
-* `step02c_install_dependencies_raspberry.sh.`: Script to build and install required dependencies for Raspberry Pi
+* `step02b_install_dependencies_jetson.sh.`: Script to build and install required dependencies for Jetson Nano build
+* `step02c_install_dependencies_raspberry.sh.`: Script to build and install required dependencies for Raspberry Pi build
 * `step03a_generate_build_files_local.sh.`: Script to generate local build files
 * `step03b_generate_build_files_jetson.sh.`: Script to generate Jetson Nano build files
 * `step03c_generate_build_files_raspberry.sh.`: Script to generate Raspberry Pi build files
@@ -31,7 +33,7 @@ Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and
 
 ### Building locally:
 
-1. Run `step01_install_software.sh` to install the required software
+1. Run `step01a_install_software.sh` to install the required software
 2. Run `step02a_install_dependencies_local.sh.` to install Conan dependencies
 3. Run `step03a_generate_build_files_local.sh.` to generate the build files using CMake
 4. Run `step04a_build_local_project_local.sh` to build the project using Make (default CMake build system)
@@ -39,7 +41,7 @@ Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and
 
 ### Building for Jetson Nano:
 
-1. Run `step01_install_software.sh` to install the required software
+1. Run `step01b_install_software.sh` to install the required software
 2. Run `step02b_install_dependencies_jetson.sh.` to install Conan dependencies
 3. Run `step03b_generate_build_files_jetson.sh.` to generate the build files using CMake
 4. Run `step04b_build_jetson_project.sh` to build the project using Ninja
@@ -47,15 +49,15 @@ Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and
 
 ### Building for Raspberry Pi:
 
-1. Run `step01_install_software.sh` to install the required software
+1. Run `step01c_install_software.sh` to install the required software
 2. Run `step02c_install_dependencies_raspberry.sh.` to install Conan dependencies
 3. Run `step03c_generate_build_files_raspberry.sh.` to generate the build files using CMake
 4. Run `step04c_build_raspberry_project.sh` to build the project using Ninja
 5. Run `step05c_validate_raspberry_binary.sh` to validate the binary
 
-**Important:** Run `step00_clean_build_files.sh` to completely clean the build process before building for a different platform.
-
 ## Recommendations
+
+Run `step00_clean_build_files.sh` to completely clean the build process before building for a different platform.
 
 Analyze the commands written in the `.sh` files.
 

@@ -23,9 +23,9 @@ Files related to Example04 (**CMake C++ project with Glog using Conan and Ninja*
 4. Run `step04_build_the_project.sh` to build the project using Ninja
 5. Run `step05_execute_the_binary.sh` to execute the binary
 
-**Optional:** Run `step00_clean_build_files.sh` to completely clean the build process if you want to start it again from the scratch.
-
 ## Recommendations
+
+Run `step00_clean_build_files.sh` to completely clean the build process if you want to start it again from the scratch.
 
 Analyze the commands written in the `.sh` files.
 

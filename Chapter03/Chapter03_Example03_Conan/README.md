@@ -23,9 +23,9 @@ Files related to Example03 (**CMake C++ project with Glog project using Conan**)
 4. Run `step04_build_the_project.sh` to build the project using Make (default CMake build system)
 5. Run `step05_execute_the_binary.sh` to execute the binary
 
-**Optional:** Run `step00_clean_build_files.sh` to completely clean the build process if you want to start it again from the scratch.
-
 ## Recommendations
+
+Run `step00_clean_build_files.sh` to completely clean the build process if you want to start it again from the scratch.
 
 Analyze the commands written in the `.sh` files.
 

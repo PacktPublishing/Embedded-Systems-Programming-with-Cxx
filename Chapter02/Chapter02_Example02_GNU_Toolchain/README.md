@@ -17,14 +17,14 @@ Files related to Example01 (**Compiling C++ with GNU ARM Toolchain**) from Chapt
 ### Building for Jetson Nano:
 
 1. Run `step01a_install_software_jetson.sh` to install the required software
-4. Run `step02a_compile_for_jetson.sh` to compile the source using GNU ARM Toolchain
-5. Run `step03a_validate_the_binary.sh` to validate the binary
+2. Run `step02a_compile_for_jetson.sh` to compile the source using GNU ARM Toolchain
+3. Run `step03a_validate_the_binary.sh` to validate the binary
 
 ### Building for Raspberry Pi:
 
 1. Run `step01b_install_software_raspberry.sh` to install the required software
-4. Run `step02b_compile_for_raspberry.sh` to compile the source using GNU ARM Toolchain
-5. Run `step03b_validate_the_binary.sh` to validate the binary
+2. Run `step02b_compile_for_raspberry.sh` to compile the source using GNU ARM Toolchain
+3. Run `step03b_validate_the_binary.sh` to validate the binary
 
 ## Recommendations
 

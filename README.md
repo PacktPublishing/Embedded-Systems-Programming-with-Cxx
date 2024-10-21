@@ -11,7 +11,7 @@ Embedded Systems Programming with C++ goes through all the steps to create and i
 
 The book covers the following exciting features:
 * Choose and set up the appropriate device and OS for a project
-* Create Yocto, Docker, CMake and Conan builds from the scratch
+* Create Yocto, Docker, CMake, Ninja and Conan builds from the scratch
 * Write clean, safe, cross-platform and reusable C++ code
 * Manipulate data, image and video using SQLite, OpenCV and GStreamer
 * Communicate your device to the world via Bluetooth, USB, Ethernet
@@ -39,11 +39,27 @@ With the following software and hardware list you can run all code files present
 
 ## Software and Hardware List
 
-| Chapters | Software/OS Required        | Hardware Required 
-| -------- | --------------------------- | ------------------------------------------------------------------------------------------ |
-| 1        | Raspberry Pi OS (Raspbian)  | Raspberry Pi + Linux workstation (or Mac/Windows with proper configuration)                |
-| 1        | NVIDIA Jetson Nano Dev Kit  | NVIDIA Jetson Nano + Linux workstation (or Mac/Windows with proper configuration)          |
-| 1        | YOCTO project               | Compatible SoC or MCU board + Linux workstation (or Mac/Windows with proper configuration) |
+| Chapters                        | Hardware Required
+| ------------------------------- | ----------------------------------------------------------------- |
+| 1, 2, 3                         | Linux workstation (or Mac/Windows/BSD with proper configuration)  |
+| 1, 2                            | Raspberry Pi, NVIDIA Jetson Nano, or compatible SoC / MCU board   |
+
+| Chapters                        | Software Required           |
+| ------------------------------- | --------------------------- |
+| 1                               | Raspberry Pi OS (Raspbian)    |
+| 1                               | NVIDIA Jetson Nano Dev Kit    |
+| 1, 2                            | YOCTO (poky project files)    |
+| 2, 3                            | GCC                           |
+| 2, 3                            | GNU ARM Toolchains            |
+| 2                               | Docker                        |
+| 2                               | QEMU                          |
+| 3                               | Make                          |
+| 3                               | CMake                         |
+| 3                               | Ninja                         |
+| 3                               | Conan                         |
+| 3                               | glog (Google Logging library) |
+
+**Note:** The listed software may require additional dependencies, so please check the corresponding official website for each one.
 
 ## Get to Know the Author
 

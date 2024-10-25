@@ -1,5 +1,7 @@
 #!/bin/bash
 
+initial_directory=$(pwd)
+
 cd poky
 rm -rf build
-cd -
+cd "$initial_directory"

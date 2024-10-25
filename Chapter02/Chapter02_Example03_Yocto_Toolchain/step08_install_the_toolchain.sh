@@ -1,5 +1,7 @@
 #!/bin/bash
 
+initial_directory=$(pwd)
+
 cd poky/build/tmp/deploy/toolchain/
 
 # The code below will run the Toolchain script
@@ -10,4 +12,5 @@ cd poky/build/tmp/deploy/toolchain/
 
 source $(ls -t *toolchain*.sh | head -n 1)
 
-cd -
+
+cd "$initial_directory"

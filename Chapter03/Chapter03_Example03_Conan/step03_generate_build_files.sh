@@ -1,5 +1,8 @@
 #!/bin/bash
 
+initial_directory=$(pwd)
+
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
-cd -
+
+cd "$initial_directory"

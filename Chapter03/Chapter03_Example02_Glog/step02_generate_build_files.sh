@@ -1,6 +1,9 @@
 #!/bin/bash
 
+initial_directory=$(pwd)
+
 mkdir build
 cd build
 cmake ..
-cd -
+
+cd "$initial_directory"

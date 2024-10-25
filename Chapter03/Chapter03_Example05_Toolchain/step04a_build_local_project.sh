@@ -1,8 +1,10 @@
 #!/bin/bash
 
+initial_directory=$(pwd)
+
 cd build-local
 
 # ninja
 cmake --build .
 
-cd -
+cd "$initial_directory"

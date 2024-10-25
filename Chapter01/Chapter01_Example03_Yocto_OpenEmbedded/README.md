@@ -15,9 +15,10 @@ Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**
 * `step06a_add_layer_jetson.sh`: Script to add Jetson Nano hardware layer
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
 * `step07_clone_open_embedded.sh`: Script to clone Open Embedded project
-* `step08_add_layer_python.sh`: Script to add Python layer from Open Embedded project
-* `step09_add_python.sh`: Script append add Python app to the distribution
-* `step10_build_the_image.sh`: Script to build the image
+* `step08_add_layer_open_embedded.sh`: Script to add Open Embedded base layer
+* `step09_add_layer_python.sh`: Script to add Python layer from Open Embedded project
+* `step10_add_python.sh`: Script append add Python app to the distribution
+* `step11_build_the_image.sh`: Script to build the image
 
 ## Instructions
 
@@ -30,9 +31,10 @@ Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**
 5. Run `source step05a_set_conf_jetson.sh` to configure the build for Jetson Nano
 6. Run `source step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
 7. Run `source step07_clone_open_embedded.sh` to clone the Open Embedded project
-7. Run `source step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
-7. Run `source step09_add_python.sh` to include Python to the build
-8. Run `source step10_build_the_image.sh` to build the image
+8. Run `source step08_add_layer_open_embedded.sh` to include Open Embedded layer to the build
+9. Run `source step09_add_layer_python.sh` to include Python layer from Open Embedded to the build
+10. Run `source step10_add_python.sh` to include Python to the build
+11. Run `source step11_build_the_image.sh` to build the image
 
 ### Building for Raspberry Pi:
 
@@ -43,9 +45,10 @@ Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**
 5. Run `source step05b_set_conf_raspberry.sh` to configure the build for Raspberry Pi
 6. Run `source step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
 7. Run `source step07_clone_open_embedded.sh` to clone the Open Embedded project
-7. Run `source step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
-7. Run `source step09_add_python.sh` to include Python to the build
-8. Run `source step10_build_the_image.sh` to build the image
+8. Run `source step08_add_layer_open_embedded.sh` to include Open Embedded layer to the build
+9. Run `source step09_add_layer_python.sh` to include Python layer from Open Embedded to the build
+10. Run `source step10_add_python.sh` to include Python to the build
+11. Run `source step11_build_the_image.sh` to build the image
 
 ## Recommendations
 
@@ -53,10 +56,10 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
-Change `step10_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
+Change `step11_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
 
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
 
-Similar to `step09_add_python.sh`, change `poky/build/conf/local.conf` to add other applications than Python.
+Similar to `step10_add_python.sh`, change `poky/build/conf/local.conf` to add other applications than Python.
 
-Similar to `step08_add_layer_python.sh`, add other layers from Open Embedded project to use more applications.
+Similar to `step09_add_layer_python.sh`, add other layers from Open Embedded project to use more applications.

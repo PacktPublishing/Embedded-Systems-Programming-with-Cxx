@@ -44,8 +44,8 @@ With the following software and hardware list you can run all code files present
 | 1, 2, 3                         | Linux workstation (or Mac/Windows/BSD with proper configuration)  |
 | 1, 2                            | Raspberry Pi, NVIDIA Jetson Nano, or compatible SoC / MCU board   |
 
-| Chapters                        | Software Required           |
-| ------------------------------- | --------------------------- |
+| Chapters                        | Software Required             |
+| ------------------------------- | ----------------------------- |
 | 1                               | Raspberry Pi OS (Raspbian)    |
 | 1                               | NVIDIA Jetson Nano Dev Kit    |
 | 1, 2                            | YOCTO dependencies            |

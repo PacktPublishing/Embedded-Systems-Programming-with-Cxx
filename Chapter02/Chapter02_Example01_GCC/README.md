@@ -13,9 +13,9 @@ Files related to Example01 (**Compiling C++ natively with GCC**) from Chapter02.
 
 ## Instructions
 
-1. Run `step01_install_software.sh` to install the required dependencies
-2. Run `step02_compile_source.sh` to generate the binary using GCC
-3. Run `step03_execute_the_binary.sh` to execute the binary
+1. Run `source step01_install_software.sh` to install the required dependencies
+2. Run `source step02_compile_source.sh` to generate the binary using GCC
+3. Run `source step03_execute_the_binary.sh` to execute the binary
 
 ## Recommendations
 

@@ -19,13 +19,13 @@ Files related to Example05 (**Setting QEMU and compiling C++ on the Virtual Mach
 
 Before start you must download an Ubuntu ISO from [ubuntu.com](https://www.ubuntu.com).
 
-1. Run `step01_install_local_software.sh` to install the required dependencies
-2. Run `step02_create_qemu_image.sh` to create QEMU image
-3. Run `step03_boot_qemu_from_iso.sh` to boot QEMU machine with the ISO file
-4. Run `step04_run_qemu_machine.sh` to run QEMU machine
-5. Run `step05_install_qemu_software.sh` to install the required dependencies (inside QEMU machine)
-6. Run `step06_compile_the_source.sh` to generate the binary using GCC (inside QEMU machine)
-7. Run `step07_execute_the_binary.sh` to execute the binary (inside QEMU machine)
+1. Run `source step01_install_local_software.sh` to install the required dependencies
+2. Run `source step02_create_qemu_image.sh` to create QEMU image
+3. Run `source step03_boot_qemu_from_iso.sh` to boot QEMU machine with the ISO file
+4. Run `source step04_run_qemu_machine.sh` to run QEMU machine
+5. Run `source step05_install_qemu_software.sh` to install the required dependencies (inside QEMU machine)
+6. Run `source step06_compile_the_source.sh` to generate the binary using GCC (inside QEMU machine)
+7. Run `source step07_execute_the_binary.sh` to execute the binary (inside QEMU machine)
 
 ## Recommendations
 

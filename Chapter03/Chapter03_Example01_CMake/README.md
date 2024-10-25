@@ -15,10 +15,10 @@ Files related to Example01 (**CMake C++ project**) from Chapter03.
 
 ## Instructions
 
-1. Run `step01_install_software.sh` to install the required dependencies
-2. Run `step02_generate_build_files.sh.` to generate the build files using CMake
-3. Run `step03_build_the_project.sh` to build the project using Make (default CMake build system)
-4. Run `step04_execute_the_binary.sh` to execute the binary
+1. Run `source step01_install_software.sh` to install the required dependencies
+2. Run `source step02_generate_build_files.sh.` to generate the build files using CMake
+3. Run `source step03_build_the_project.sh` to build the project using Make (default CMake build system)
+4. Run `source step04_execute_the_binary.sh` to execute the binary
 
 ## Recommendations
 

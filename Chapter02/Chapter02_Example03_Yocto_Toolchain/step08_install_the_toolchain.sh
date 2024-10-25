@@ -8,4 +8,4 @@ cd poky/build/tmp/deploy/toolchain/
 # e.g.: poky-glibc-x86_64-raspberrypi3-toolchain-1.0.sh
 # e.g.: poky-glibc-x86_64-jetson-nano-toolchain-2.2.sh
 
-bash $(ls *toolchain*.sh | head -n 1)
+source $(ls -t *toolchain*.sh | head -n 1)

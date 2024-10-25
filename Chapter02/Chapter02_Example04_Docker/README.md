@@ -16,10 +16,10 @@ Files related to Example04 (**Setting Docker and compiling C++ inside the Contai
 
 Before start you must install Docker from [docker.com](https://www.docker.com).
 
-1. Run `step01_build_docker_container.sh` to build Docker container
-2. Run `step02_run_docker_container.sh` to run Docker container
-3. Run `step03_compile_the_source.sh` to generate the binary using GCC (inside Docker container)
-4. Run `step04_execute_the_binary.sh` to execute the binary (inside Docker container)
+1. Run `source step01_build_docker_container.sh` to build Docker container
+2. Run `source step02_run_docker_container.sh` to run Docker container
+3. Run `source step03_compile_the_source.sh` to generate the binary using GCC (inside Docker container)
+4. Run `source step04_execute_the_binary.sh` to execute the binary (inside Docker container)
 
 ## Recommendations
 

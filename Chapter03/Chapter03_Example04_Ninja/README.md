@@ -17,11 +17,11 @@ Files related to Example04 (**CMake C++ project with Glog using Conan and Ninja*
 
 ## Instructions
 
-1. Run `step01_install_software.sh` to install the required software
-2. Run `step02_install_dependencies.sh.` to install Conan dependencies
-3. Run `step03_generate_build_files.sh.` to generate the build files using CMake
-4. Run `step04_build_the_project.sh` to build the project using Ninja
-5. Run `step05_execute_the_binary.sh` to execute the binary
+1. Run `source step01_install_software.sh` to install the required software
+2. Run `source step02_install_dependencies.sh.` to install Conan dependencies
+3. Run `source step03_generate_build_files.sh.` to generate the build files using CMake
+4. Run `source step04_build_the_project.sh` to build the project using Ninja
+5. Run `source step05_execute_the_binary.sh` to execute the binary
 
 ## Recommendations
 

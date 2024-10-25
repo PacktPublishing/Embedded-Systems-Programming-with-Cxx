@@ -33,27 +33,27 @@ Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and
 
 ### Building locally:
 
-1. Run `step01a_install_software.sh` to install the required software
-2. Run `step02a_install_dependencies_local.sh.` to install Conan dependencies
-3. Run `step03a_generate_build_files_local.sh.` to generate the build files using CMake
-4. Run `step04a_build_local_project_local.sh` to build the project using Make (default CMake build system)
-5. Run `step05a_execute_local_binary.sh` to execute the binary
+1. Run `source step01a_install_software.sh` to install the required software
+2. Run `source step02a_install_dependencies_local.sh.` to install Conan dependencies
+3. Run `source step03a_generate_build_files_local.sh.` to generate the build files using CMake
+4. Run `source step04a_build_local_project_local.sh` to build the project using Make (default CMake build system)
+5. Run `source step05a_execute_local_binary.sh` to execute the binary
 
 ### Building for Jetson Nano:
 
-1. Run `step01b_install_software.sh` to install the required software
-2. Run `step02b_install_dependencies_jetson.sh.` to install Conan dependencies
-3. Run `step03b_generate_build_files_jetson.sh.` to generate the build files using CMake
-4. Run `step04b_build_jetson_project.sh` to build the project using Ninja
-5. Run `step05b_validate_jetson_binary.sh` to validate the binary
+1. Run `source step01b_install_software.sh` to install the required software
+2. Run `source step02b_install_dependencies_jetson.sh.` to install Conan dependencies
+3. Run `source step03b_generate_build_files_jetson.sh.` to generate the build files using CMake
+4. Run `source step04b_build_jetson_project.sh` to build the project using Ninja
+5. Run `source step05b_validate_jetson_binary.sh` to validate the binary
 
 ### Building for Raspberry Pi:
 
-1. Run `step01c_install_software.sh` to install the required software
-2. Run `step02c_install_dependencies_raspberry.sh.` to install Conan dependencies
-3. Run `step03c_generate_build_files_raspberry.sh.` to generate the build files using CMake
-4. Run `step04c_build_raspberry_project.sh` to build the project using Ninja
-5. Run `step05c_validate_raspberry_binary.sh` to validate the binary
+1. Run `source step01c_install_software.sh` to install the required software
+2. Run `source step02c_install_dependencies_raspberry.sh.` to install Conan dependencies
+3. Run `source step03c_generate_build_files_raspberry.sh.` to generate the build files using CMake
+4. Run `source step04c_build_raspberry_project.sh` to build the project using Ninja
+5. Run `source step05c_validate_raspberry_binary.sh` to validate the binary
 
 ## Recommendations
 

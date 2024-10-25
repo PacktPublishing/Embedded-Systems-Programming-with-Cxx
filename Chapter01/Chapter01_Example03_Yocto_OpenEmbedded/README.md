@@ -23,29 +23,29 @@ Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**
 
 ### Building for Jetson Nano:
 
-1. Run `step01_install_software.sh` to install the required dependencies
-2. Run `step02_clone_poky.sh` to clone `poky` project
-3. Run `step03a_clone_jetson_layer.sh` to clone the hardware layer for Jetson Nano
-4. Run `step04_build_environment.sh` to build the environment
-5. Run `step05a_set_conf_jetson.sh` to configure the build for Jetson Nano
-6. Run `step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
-7. Run `step07_clone_open_embedded.sh` to clone the Open Embedded project
-7. Run `step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
-7. Run `step09_add_python.sh` to include Python to the build
-8. Run `step10_build_the_image.sh` to build the image
+1. Run `source step01_install_software.sh` to install the required dependencies
+2. Run `source step02_clone_poky.sh` to clone `poky` project
+3. Run `source step03a_clone_jetson_layer.sh` to clone the hardware layer for Jetson Nano
+4. Run `source step04_build_environment.sh` to build the environment
+5. Run `source step05a_set_conf_jetson.sh` to configure the build for Jetson Nano
+6. Run `source step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
+7. Run `source step07_clone_open_embedded.sh` to clone the Open Embedded project
+7. Run `source step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
+7. Run `source step09_add_python.sh` to include Python to the build
+8. Run `source step10_build_the_image.sh` to build the image
 
 ### Building for Raspberry Pi:
 
-1. Run `step01_install_software.sh` to install the required dependencies
-2. Run `step02_clone_poky.sh` to clone `poky` project
-3. Run `step03b_clone_raspberry_layer.sh` to clone the hardware layer for Raspberry Pi
-4. Run `step04_build_environment.sh` to build the environment
-5. Run `step05b_set_conf_raspberry.sh` to configure the build for Raspberry Pi
-6. Run `step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
-7. Run `step07_clone_open_embedded.sh` to clone the Open Embedded project
-7. Run `step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
-7. Run `step09_add_python.sh` to include Python to the build
-8. Run `step10_build_the_image.sh` to build the image
+1. Run `source step01_install_software.sh` to install the required dependencies
+2. Run `source step02_clone_poky.sh` to clone `poky` project
+3. Run `source step03b_clone_raspberry_layer.sh` to clone the hardware layer for Raspberry Pi
+4. Run `source step04_build_environment.sh` to build the environment
+5. Run `source step05b_set_conf_raspberry.sh` to configure the build for Raspberry Pi
+6. Run `source step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
+7. Run `source step07_clone_open_embedded.sh` to clone the Open Embedded project
+7. Run `source step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
+7. Run `source step09_add_python.sh` to include Python to the build
+8. Run `source step10_build_the_image.sh` to build the image
 
 ## Recommendations
 

@@ -1,24 +1,23 @@
 # Embedded Systems Programming with C++
 
-Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) from Chapter02.
+Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**) from Chapter01.
 
 ## Files
 
-* `example_source.cpp:` C++ source file
 * `step00_clean_build_files.sh`: Script to clean the previous build
 * `step01_install_software.sh`: Script to install required software
 * `step02_clone_poky.sh`: Script to clone `poky` project
 * `step03a_clone_jetson_layer.sh`: Script to clone the hardware layer for Jetson Nano
 * `step03b_clone_raspberry_layer.sh`: Script to clone the hardware layer for Raspberry Pi
 * `step04_build_environment.sh`: Script to build the environment
-* `step05a_set_machine_jetson.sh`: Script to configure the build for Jetson Nano
-* `step05b_set_machine_raspberry.sh`: Script to configure the build for Raspberry Pi
+* `step05a_set_conf_jetson.sh`: Script to configure the build for Jetson Nano
+* `step05b_set_conf_raspberry.sh`: Script to configure the build for Raspberry Pi
 * `step06a_add_layer_jetson.sh`: Script to add Jetson Nano hardware layer
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
-* `step07_build_the_toolchain.sh`: Script to build the Yocto Toolchain
-* `step08_install_the_toolchain.sh`: Script to build the Yocto Toolchain
-* `step09_compile_the_source.sh`: Script to compile the source
-* `step10_validate_the_binary.sh`: Script to validate the binary
+* `step07_clone_open_embedded.sh`: Script to clone Open Embedded project
+* `step08_add_layer_python.sh`: Script to add Python layer from Open Embedded project
+* `step09_add_python.sh`: Script append add Python app to the distribution
+* `step10_build_the_image.sh`: Script to build the image
 
 ## Instructions
 
@@ -28,12 +27,12 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 2. Run `step02_clone_poky.sh` to clone `poky` project
 3. Run `step03a_clone_jetson_layer.sh` to clone the hardware layer for Jetson Nano
 4. Run `step04_build_environment.sh` to build the environment
-5. Run `step05a_set_machine_jetson.sh` to configure the build for Jetson Nano
+5. Run `step05a_set_conf_jetson.sh` to configure the build for Jetson Nano
 6. Run `step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
-7. Run `step07_build_the_image.sh` to build the Toolchain
-8. Run `step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `step09_compile_the_source.sh` to compile the source using the Toolchain g++
-10. Run `step10_validate_the_binary.sh`: Script to validate the binary
+7. Run `step07_clone_open_embedded.sh` to clone the Open Embedded project
+7. Run `step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
+7. Run `step09_add_python.sh` to include Python to the build
+8. Run `step10_build_the_image.sh` to build the image
 
 ### Building for Raspberry Pi:
 
@@ -41,12 +40,12 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 2. Run `step02_clone_poky.sh` to clone `poky` project
 3. Run `step03b_clone_raspberry_layer.sh` to clone the hardware layer for Raspberry Pi
 4. Run `step04_build_environment.sh` to build the environment
-5. Run `step05b_set_machine_raspberry.sh` to configure the build for Raspberry Pi
+5. Run `step05b_set_conf_raspberry.sh` to configure the build for Raspberry Pi
 6. Run `step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
-7. Run `step07_build_the_image.sh` to build the Toolchain
-8. Run `step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `step09_compile_the_source.sh` to compile the source using the Toolchain g++
-10. Run `step10_validate_the_binary.sh`: Script to validate the binary
+7. Run `step07_clone_open_embedded.sh` to clone the Open Embedded project
+7. Run `step08_add_layer_python.sh` to include Python layer from Open Embedded to the build
+7. Run `step09_add_python.sh` to include Python to the build
+8. Run `step10_build_the_image.sh` to build the image
 
 ## Recommendations
 
@@ -54,6 +53,10 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
+Change `step10_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
+
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
 
-Find out more information about the Toolchain compiler by running `which g++` and `g++ --version`.
+Similar to `step09_add_python.sh`, change `poky/build/conf/local.conf` to add other applications than Python.
+
+Similar to `step08_add_layer_python.sh`, add other layers from Open Embedded project to use more applications.

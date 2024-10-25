@@ -1,10 +1,9 @@
 # Embedded Systems Programming with C++
 
-Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) from Chapter02.
+Files related to Example01 (**Creating an Yocto distribution**) from Chapter01.
 
 ## Files
 
-* `example_source.cpp:` C++ source file
 * `step00_clean_build_files.sh`: Script to clean the previous build
 * `step01_install_software.sh`: Script to install required software
 * `step02_clone_poky.sh`: Script to clone `poky` project
@@ -15,10 +14,7 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 * `step05b_set_machine_raspberry.sh`: Script to configure the build for Raspberry Pi
 * `step06a_add_layer_jetson.sh`: Script to add Jetson Nano hardware layer
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
-* `step07_build_the_toolchain.sh`: Script to build the Yocto Toolchain
-* `step08_install_the_toolchain.sh`: Script to build the Yocto Toolchain
-* `step09_compile_the_source.sh`: Script to compile the source
-* `step10_validate_the_binary.sh`: Script to validate the binary
+* `step07_build_the_image.sh`: Script to build the image
 
 ## Instructions
 
@@ -30,10 +26,7 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 4. Run `step04_build_environment.sh` to build the environment
 5. Run `step05a_set_machine_jetson.sh` to configure the build for Jetson Nano
 6. Run `step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
-7. Run `step07_build_the_image.sh` to build the Toolchain
-8. Run `step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `step09_compile_the_source.sh` to compile the source using the Toolchain g++
-10. Run `step10_validate_the_binary.sh`: Script to validate the binary
+7. Run `step07_build_the_image.sh` to build the image
 
 ### Building for Raspberry Pi:
 
@@ -43,10 +36,7 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 4. Run `step04_build_environment.sh` to build the environment
 5. Run `step05b_set_machine_raspberry.sh` to configure the build for Raspberry Pi
 6. Run `step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
-7. Run `step07_build_the_image.sh` to build the Toolchain
-8. Run `step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `step09_compile_the_source.sh` to compile the source using the Toolchain g++
-10. Run `step10_validate_the_binary.sh`: Script to validate the binary
+7. Run `step07_build_the_image.sh` to build the image
 
 ## Recommendations
 
@@ -54,6 +44,6 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
-Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
+Change `step07_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
 
-Find out more information about the Toolchain compiler by running `which g++` and `g++ --version`.
+Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.

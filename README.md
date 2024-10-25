@@ -48,7 +48,7 @@ With the following software and hardware list you can run all code files present
 | ------------------------------- | --------------------------- |
 | 1                               | Raspberry Pi OS (Raspbian)    |
 | 1                               | NVIDIA Jetson Nano Dev Kit    |
-| 1, 2                            | YOCTO (poky project files)    |
+| 1, 2                            | YOCTO dependencies            |
 | 2, 3                            | GCC                           |
 | 2, 3                            | GNU ARM Toolchains            |
 | 2                               | Docker                        |

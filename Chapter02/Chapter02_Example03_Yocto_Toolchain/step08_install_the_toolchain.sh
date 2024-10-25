@@ -2,7 +2,7 @@
 
 initial_directory=$(pwd)
 
-cd poky/build/tmp/deploy/toolchain/
+cd poky/build/tmp/deploy/sdk/
 
 # The code below will run the Toolchain script
 #   without needing to know exactly its name/version/platform

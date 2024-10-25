@@ -60,6 +60,8 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
+You can build only the customized app by running `bitbake example_app` from `poky/build` folder.
+
 Change `step12_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
 
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.

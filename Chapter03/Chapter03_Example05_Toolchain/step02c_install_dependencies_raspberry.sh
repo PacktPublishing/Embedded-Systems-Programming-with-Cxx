@@ -6,3 +6,5 @@ mkdir build-raspberry
 cd build-raspberry
 
 conan install .. --build=missing --output-folder . --profile=conan-raspberry.profile 
+
+cd -

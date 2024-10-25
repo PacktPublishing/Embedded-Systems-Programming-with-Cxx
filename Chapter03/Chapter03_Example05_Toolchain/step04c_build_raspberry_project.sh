@@ -4,3 +4,5 @@ cd build-raspberry
 
 # ninja
 cmake --build .
+
+cd -

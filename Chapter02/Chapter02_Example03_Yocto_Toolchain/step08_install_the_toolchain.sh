@@ -9,3 +9,5 @@ cd poky/build/tmp/deploy/toolchain/
 # e.g.: poky-glibc-x86_64-jetson-nano-toolchain-2.2.sh
 
 source $(ls -t *toolchain*.sh | head -n 1)
+
+cd -

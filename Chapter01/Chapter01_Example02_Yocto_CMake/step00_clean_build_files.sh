@@ -2,3 +2,4 @@
 
 cd poky
 rm -rf build
+cd -

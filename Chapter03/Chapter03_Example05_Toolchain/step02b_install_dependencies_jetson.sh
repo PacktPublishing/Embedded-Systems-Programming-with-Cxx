@@ -6,3 +6,5 @@ mkdir build-jetson
 cd build-jetson
 
 conan install .. --build=missing --output-folder . --profile=conan-jetson.profile 
+
+cd -

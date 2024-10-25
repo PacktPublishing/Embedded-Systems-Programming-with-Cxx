@@ -63,3 +63,5 @@ Check Yocto documentation system requirements to ensure that your environment is
 Similar to `step10_add_python.sh`, change `poky/build/conf/local.conf` to add other applications than Python.
 
 Similar to `step09_add_layer_python.sh`, add other layers from Open Embedded project to use more applications.
+
+After finishing the process, your image will be placed in `poky/build/tmp/deploy/images/`. Copy it to an SD card, and use it to flash your board.

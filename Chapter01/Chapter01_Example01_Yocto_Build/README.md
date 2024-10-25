@@ -47,3 +47,5 @@ Analyze the commands written in the `.sh` files.
 Change `step07_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
 
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
+
+After finishing the process, your image will be placed in `poky/build/tmp/deploy/images/`. Copy it to an SD card, and use it to flash your board.

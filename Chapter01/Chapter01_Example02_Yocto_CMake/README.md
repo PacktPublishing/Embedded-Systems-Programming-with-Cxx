@@ -52,3 +52,5 @@ Change `step08_build_the_image.sh` by replacing `core-image-minimal` with `core-
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
 
 Similar to `step07_add_cmake.sh`, change `poky/build/conf/local.conf` to add other applications than CMake.
+
+After finishing the process, your image will be placed in `poky/build/tmp/deploy/images/`. Copy it to an SD card, and use it to flash your board.

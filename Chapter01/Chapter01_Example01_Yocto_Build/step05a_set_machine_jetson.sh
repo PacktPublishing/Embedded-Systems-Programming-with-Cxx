@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sed -i '/^MACHINE\s*?=/!s/^/MACHINE ?= "jetson-nano"\n/' poky/build/conf/local.conf
+sed -i '$ a MACHINE ?= "jetson-nano"\n' poky/build/conf/local.conf
+cat poky/build/conf/local.conf

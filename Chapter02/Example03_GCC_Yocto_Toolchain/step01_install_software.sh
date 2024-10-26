@@ -13,6 +13,7 @@ if [ -d "/etc/apt" ]; then
     sudo apt-get install -y gcc
     sudo apt-get install -y g++
     sudo apt-get install -y gcc-multilib
+    sudo apt-get install -y coreutils
     sudo apt-get install -y build-essential
     sudo apt-get install -y chrpath
     sudo apt-get install -y socat

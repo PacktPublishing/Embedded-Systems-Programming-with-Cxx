@@ -7,5 +7,4 @@ cd build
 # ninja
 cmake --build .
 
-
 cd "$initial_directory"

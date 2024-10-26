@@ -59,6 +59,7 @@ if [ -d "/etc/apt" ]; then
     sudo apt-get install -y rsync
     sudo apt-get install -y bmap-tools
     sudo apt-get install -y dosfstools
+    sudo apt-get install -y quilt
 else
     echo "Please manually install required software for Yocto "dunfell" branch and layers."
 fi

@@ -56,4 +56,6 @@ Analyze the commands written in the `.sh` files.
 
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
 
+You may need to change the path or name of the toolchain install script. Check the `step08_install_the_toolchain.sh` in case of errors.
+
 Find out more information about the Toolchain compiler by running `which g++` and `g++ --version`.

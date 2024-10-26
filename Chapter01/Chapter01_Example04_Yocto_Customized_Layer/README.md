@@ -18,10 +18,11 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 * `step07_create_custom_app_layer.sh`: Script to create a new layer
 * `step08_copy_custom_app_recipe_file.sh`: Script to copy example.bb file
 * `step09_copy_custom_app_source_file.sh`: Script to copy example_source.cpp file
-* `step10_add_layer_custom_app.sh`: Script to add the example app layer
-* `step11_add_custom_app.sh`: Script append add example app to the distribution
-* `step12_build_the_app.sh`: Script to build the app
-* `step13_build_the_image.sh`: Script to build the image
+* `step10_copy_custom_app_license_file.sh`: Script to copy LICENSE file
+* `step11_add_layer_custom_app.sh`: Script to add the example app layer
+* `step12_add_custom_app.sh`: Script append add example app to the distribution
+* `step13_build_the_app.sh`: Script to build the app
+* `step14_build_the_image.sh`: Script to build the image
 
 ## Instructions
 
@@ -36,10 +37,11 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 7. Run `source step07_create_custom_app_layer.sh` to create the example layer
 8. Run `source step08_copy_custom_app_recipe_file.sh` to install the example.bb file
 9. Run `source step09_copy_custom_app_source_file.sh` to install the example_source.cpp file
-10. Run `source step10_add_layer_custom_app.sh` to add the example layer
-11. Run `source step11_add_custom_app.sh` to include the example app to the build
-12. Run `source step12_build_the_app.sh` to build the app (this is an optional step)
-13. Run `source step13_build_the_image.sh` to build the image
+10. Run `source step10_copy_custom_app_license_file.sh` to install the LICENSE file
+11. Run `source step11_add_layer_custom_app.sh` to add the example layer
+12. Run `source step12_add_custom_app.sh` to include the example app to the build
+13. Run `source step13_build_the_app.sh` to build the app (this is an optional step)
+14. Run `source step14_build_the_image.sh` to build the image
 
 ### Building for Raspberry Pi:
 
@@ -52,10 +54,11 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 7. Run `source step07_create_custom_app_layer.sh` to create the example layer
 8. Run `source step08_copy_custom_app_recipe_file.sh` to install the example.bb file
 9. Run `source step09_copy_custom_app_source_file.sh` to install the example_source.cpp file
-10. Run `source step10_add_layer_custom_app.sh` to add the example layer
-11. Run `source step11_add_custom_app.sh` to include the example app to the build
-12. Run `source step12_build_the_app.sh` to build the app (this is an optional step)
-13. Run `source step13_build_the_image.sh` to build the image
+10. Run `source step10_copy_custom_app_license_file.sh` to install the LICENSE file
+11. Run `source step11_add_layer_custom_app.sh` to add the example layer
+12. Run `source step12_add_custom_app.sh` to include the example app to the build
+13. Run `source step13_build_the_app.sh` to build the app (this is an optional step)
+14. Run `source step14_build_the_image.sh` to build the image
 
 ## Recommendations
 
@@ -63,9 +66,9 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
-The `step12_build_the_app.sh` is optional, but useful to find errors in your app before start building the image.
+The `step13_build_the_app.sh` is optional, but useful to find errors in your app before start building the image.
 
-Change `step12_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
+Change `step13_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
 
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
 

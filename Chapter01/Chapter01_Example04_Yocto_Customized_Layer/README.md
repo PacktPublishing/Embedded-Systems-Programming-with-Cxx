@@ -16,11 +16,12 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 * `step06a_add_layer_jetson.sh`: Script to add Jetson Nano hardware layer
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
 * `step07_create_custom_app_layer.sh`: Script to create a new layer
-* `step08_copy_custom_app_recipe_file.sh`: Script to copy example_app.bb file
+* `step08_copy_custom_app_recipe_file.sh`: Script to copy example.bb file
 * `step09_copy_custom_app_source_file.sh`: Script to copy example_source.cpp file
 * `step10_add_layer_custom_app.sh`: Script to add the example app layer
 * `step11_add_custom_app.sh`: Script append add example app to the distribution
-* `step12_build_the_image.sh`: Script to build the image
+* `step12_build_the_app.sh`: Script to build the app
+* `step13_build_the_image.sh`: Script to build the image
 
 ## Instructions
 
@@ -33,11 +34,12 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 5. Run `source step05a_set_conf_jetson.sh` to configure the build for Jetson Nano
 6. Run `source step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
 7. Run `source step07_create_custom_app_layer.sh` to create the example layer
-8. Run `source step08_copy_custom_app_recipe_file.sh` to install the example_app.bb file
+8. Run `source step08_copy_custom_app_recipe_file.sh` to install the example.bb file
 9. Run `source step09_copy_custom_app_source_file.sh` to install the example_source.cpp file
 10. Run `source step10_add_layer_custom_app.sh` to add the example layer
 11. Run `source step11_add_custom_app.sh` to include the example app to the build
-12. Run `source step12_build_the_image.sh` to build the image
+12. Run `source step12_build_the_app.sh` to build the app (this is an optional step)
+13. Run `source step13_build_the_image.sh` to build the image
 
 ### Building for Raspberry Pi:
 
@@ -48,11 +50,12 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 5. Run `source step05b_set_conf_raspberry.sh` to configure the build for Raspberry Pi
 6. Run `source step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
 7. Run `source step07_create_custom_app_layer.sh` to create the example layer
-8. Run `source step08_copy_custom_app_recipe_file.sh` to install the example_app.bb file
+8. Run `source step08_copy_custom_app_recipe_file.sh` to install the example.bb file
 9. Run `source step09_copy_custom_app_source_file.sh` to install the example_source.cpp file
 10. Run `source step10_add_layer_custom_app.sh` to add the example layer
 11. Run `source step11_add_custom_app.sh` to include the example app to the build
-12. Run `source step12_build_the_image.sh` to build the image
+12. Run `source step12_build_the_app.sh` to build the app (this is an optional step)
+13. Run `source step13_build_the_image.sh` to build the image
 
 ## Recommendations
 
@@ -60,7 +63,7 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
-You can build only the customized app by running `bitbake example_app` from `poky/build` folder.
+The `step12_build_the_app.sh` is optional, but useful to find errors in your app before start building the image.
 
 Change `step12_build_the_image.sh` by replacing `core-image-minimal` with `core-image-base`, `core-image-container` or `core-image-dev` to experience different set ups.
 

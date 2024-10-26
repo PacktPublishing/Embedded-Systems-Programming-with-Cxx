@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir -p poky/meta-example_layer/recipes-support/example_app/files
-cp example_source.cpp poky/meta-example_layer/recipes-support/example_app/files/
-ls -la poky/meta-example_layer/recipes-support/example_app/*
+mkdir -p poky/meta-customized/recipes-support/example/files
+cp example_source.cpp poky/meta-customized/recipes-support/example/files/
+ls -la poky/meta-customized/recipes-support/example/*

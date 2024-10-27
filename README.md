@@ -61,6 +61,10 @@ With the following software and hardware list you can run all code files present
 
 **Note:** The listed software may require additional dependencies, so please check the corresponding official website for each one.
 
+## License
+
+This project is licensed under MIT License. Check the [LICENSE](LICENSE) file for more details.
+
 ## Get to Know the Author
 
 [Heitor Peralles](mailto:heitorgp@gmail.com) is a cross-platform C++ developer with more than 20 years of experience. He started working with embedded systems in 2009 and has known C++ since 2001. He has been programming since the age 12 and describes himself as passionate about the art of computer programming. 

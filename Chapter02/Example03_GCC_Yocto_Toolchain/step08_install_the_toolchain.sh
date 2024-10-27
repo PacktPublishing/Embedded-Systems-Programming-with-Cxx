@@ -2,10 +2,9 @@
 
 initial_directory=$(pwd)
 
-cd poky/build/tmp/deploy/sdk/
-
-# Change to use the line below according to your Yocto system:
+# Change to use one of the lines below according to your Yocto system:
 # cd poky/build/tmp/deploy/toolchain/
+cd poky/build/tmp/deploy/sdk/
 
 # The code below will run the Toolchain script
 #   without needing to know exactly its name/version/platform

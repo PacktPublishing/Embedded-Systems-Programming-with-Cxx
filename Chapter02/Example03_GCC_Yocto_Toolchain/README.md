@@ -17,8 +17,10 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
 * `step07_build_the_toolchain.sh`: Script to build the Yocto Toolchain
 * `step08_install_the_toolchain.sh`: Script to build the Yocto Toolchain
-* `step09_compile_the_source.sh`: Script to compile the source
-* `step10_validate_the_binary.sh`: Script to validate the binary
+* `step09_apply_toolchain_to_path.sh`: Script to apply GCC to the PATH
+* `step10a_compile_the_source.sh`: Script to compile the source for Jetson Nano
+* `step10b_compile_the_source.sh`: Script to compile the source for Raspberry Pi
+* `step11_validate_the_binary.sh`: Script to validate the binary
 
 ## Instructions
 
@@ -32,8 +34,9 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 6. Run `source step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
 7. Run `source step07_build_the_image.sh` to build the Toolchain
 8. Run `source step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `source step09_compile_the_source.sh` to compile the source using the Toolchain g++
-10. Run `source step10_validate_the_binary.sh`: Script to validate the binary
+9. Run `source step09_apply_toolchain_to_path.sh` to make ARM g++ available
+10. Run `source step10a_compile_the_source.sh` to compile the source using the Toolchain g++
+11. Run `source step11_validate_the_binary.sh` to validate the binary
 
 ### Building for Raspberry Pi:
 
@@ -45,8 +48,9 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 6. Run `source step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
 7. Run `source step07_build_the_image.sh` to build the Toolchain
 8. Run `source step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `source step09_compile_the_source.sh` to compile the source using the Toolchain g++
-10. Run `source step10_validate_the_binary.sh`: Script to validate the binary
+9. Run `source step09_apply_toolchain_to_path.sh` to make ARM g++ available
+10. Run `source step10b_compile_the_source.sh` to compile the source using the Toolchain g++
+11. Run `source step11_validate_the_binary.sh` to validate the binary
 
 ## Recommendations
 

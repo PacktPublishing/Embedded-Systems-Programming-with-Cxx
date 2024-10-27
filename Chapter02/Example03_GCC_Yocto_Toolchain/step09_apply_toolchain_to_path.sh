@@ -11,10 +11,7 @@ initial_directory=$(pwd)
 # If you installed toolchain in a different directory, 
 #   change the lines below properly
 
-bash $(ls -t *toolchain*.sh | head -n 1)
-
 cd /opt/poky
-
 toolchain_directory = $(ls -t * | head -n 1)
 cd "$toolchain_directory"
 

@@ -12,7 +12,7 @@ initial_directory=$(pwd)
 #   change the lines below properly
 
 cd /opt/poky
-toolchain_directory=$(ls -t * | head -n 1)
+toolchain_directory=$(ls -t | head -n 1)
 cd "$toolchain_directory"
 
 environment_setup_script=$(ls -t *environment-setup* | head -n 1)

@@ -19,25 +19,26 @@ The book covers the following exciting features:
 * Manage your IoT fleet through GCP, AWS and Balena
 * Continuously monitor, access, and update your devices 
 
-## Instructions and Navigations
-
-All of the code is organized into folders. For example, `Chapter01`.
-
-The code will look like the following:
-
-```
-if (test expression)
-{
-  Statement upon condition is true
-}
-```
-
-**Following is what you need for this book:**
 If you want to start developing embedded applications in C++, create C++ desktop programs to interact with IoTs, or learn modern approaches regarding cross-platform C++ code, this book is for you. This book is also recommended for experienced C++ embedded engineers who want to get updated with the technology landscape, and for those who want to learn modern ways to manage an IoT device fleet. The reader should be comfortable with C++, object-oriented concepts, and have basic knowledge of hardware, networking, and Linux. No prior knowledge with embedded systems is required.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-16).
+## Instructions and Navigations
+
+All of the code is organized into folders.
+
+Each chapter has its own folder (e.g.: `Chapter01`, `Chapter02`).<br>
+Inside the chapter folder you will see a `README.md` file, and its examples subfolders.
+
+Each example has its own folder (e.g.: `Example01_Yocto_Build`, `Example03_CMake_Conan`).<br>
+There is a `README.md` for each example with detailed instructions.
+
+The examples are composed by several files, in general C++ source files (`.cpp`) and scripts (`.sh`), but may also have files from related applications, such as `CMake`, `Conan`, or `Yocto`.<br>
+
+Detailed steps to run the example are described in the `README.md`.<br>
+Usually each step points to one script file (e.g.: `step01_install_software`, `step04_build_environment`).
 
 ## Software and Hardware List
+
+With the following software and hardware list you can run all code files present in the book (Chapter 1-16).
 
 | Chapters                        | Hardware Required
 | ------------------------------- | ----------------------------------------------------------------- |

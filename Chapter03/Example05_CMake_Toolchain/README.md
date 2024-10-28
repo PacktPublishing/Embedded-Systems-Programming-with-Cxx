@@ -66,3 +66,13 @@ Check the software versions in your system by running: `cmake --version`, `gcc -
 You can also check the ARM GCC version by calling `gcc-aarch64-linux-gnu --version` and `gcc-arm-linux-gnueabihf --version` inside the Toolchain installation directory (same specified for `CMAKE_C_COMPILER` and `CMAKE_CXX_COMPILER`). For example: `/usr/bin/arm-linux-gnueabihf-gcc --version` and `/usr/bin/aarch64-linux-gnu-gcc --version`.
 
 You may need to change CMake `.cmake` files with the correct Toolchain paths for `CMAKE_C_COMPILER` and `CMAKE_CXX_COMPILER`. To find out Toolchain paths in Debian-based Linux distributions you can run: `dpkg -L g++-arm-linux-gnueabihf | grep bin` and `dpkg -L g++-aarch64-linux-gnu | grep bin`. You may need to change Conan `.profile` files as well, by filling `CC` and `CXX` fields from `buildenv` section with the correct Toolchain path.
+
+## License
+
+This project is licensed under MIT License. Check the [LICENSE](LICENSE) file for more details.
+
+## Get to Know the Author
+
+[Heitor Peralles](mailto:heitorgp@gmail.com) is a cross-platform C++ developer with more than 20 years of experience. He started working with embedded systems in 2009 and has known C++ since 2001. He has been programming since the age 12 and describes himself as passionate about the art of computer programming. 
+
+He was responsible for several C++ projects related to IoTs, Digital TVs, surveillance cameras, healthcare equipment, POS devices, and computer peripherals, among ARM, MIPS, and X86 devices. He also created desktop and backend solutions, targeting Linux, Windows, MacOS, FreeBSD, zOS, GCP, AWS, and Azure DevOps. Heitor holds a Computer Science BSc. degree, and he also plays with Cryptography, AI, Computer Graphics, Music, Literature and Filming.

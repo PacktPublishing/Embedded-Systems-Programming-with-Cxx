@@ -49,3 +49,13 @@ Change `step07_build_the_image.sh` by replacing `core-image-minimal` with `core-
 Check Yocto documentation system requirements to ensure that your environment is elegible and correctly set up.
 
 After finishing the process, your image will be placed in `poky/build/tmp/deploy/images/`. Copy it to an SD card, and use it to flash your board.
+
+## License
+
+This project is licensed under MIT License. Check the [LICENSE](LICENSE) file for more details.
+
+## Get to Know the Author
+
+[Heitor Peralles](mailto:heitorgp@gmail.com) is a cross-platform C++ developer with more than 20 years of experience. He started working with embedded systems in 2009 and has known C++ since 2001. He has been programming since the age 12 and describes himself as passionate about the art of computer programming. 
+
+He was responsible for several C++ projects related to IoTs, Digital TVs, surveillance cameras, healthcare equipment, POS devices, and computer peripherals, among ARM, MIPS, and X86 devices. He also created desktop and backend solutions, targeting Linux, Windows, MacOS, FreeBSD, zOS, GCP, AWS, and Azure DevOps. Heitor holds a Computer Science BSc. degree, and he also plays with Cryptography, AI, Computer Graphics, Music, Literature and Filming.

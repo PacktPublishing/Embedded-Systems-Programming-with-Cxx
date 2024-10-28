@@ -36,6 +36,25 @@ The examples are composed by several files, in general C++ source files (`.cpp`)
 Detailed steps to run the example are described in the `README.md`.<br>
 Usually each step points to one script file (e.g.: `step01_install_software`, `step04_build_environment`).
 
+The code will look like the following:
+
+```
+#ifdef SOME_ARCHITECTURE
+    void function() {
+        // code for some specific architecture
+    }
+#else
+    void function() {
+        // alternative code for a different architecture
+    }
+#endif
+```
+
+**Following is what you need for this book:**
+If you want to start developing embedded applications in C++, create C++ desktop programs to interact with IoTs, or learn modern approaches regarding cross-platform C++ code, this book is for you. This book is also recommended for experienced C++ embedded engineers who want to get updated with the technology landscape, and for those who want to learn modern ways to manage an IoT device fleet. The reader should be comfortable with C++, object-oriented concepts, and have basic knowledge of hardware, networking, and Linux. No prior knowledge with embedded systems is required.
+
+With the following software and hardware list you can run all code files present in the book (Chapter 1-16).
+
 ## Software and Hardware List
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-16).
@@ -68,6 +87,4 @@ This project is licensed under MIT License. Check the [LICENSE](LICENSE) file fo
 
 ## Get to Know the Author
 
-[Heitor Peralles](mailto:heitorgp@gmail.com) is a cross-platform C++ developer with more than 20 years of experience. He started working with embedded systems in 2009 and has known C++ since 2001. He has been programming since the age 12 and describes himself as passionate about the art of computer programming. 
-
-He was responsible for several C++ projects related to IoTs, Digital TVs, surveillance cameras, healthcare equipment, POS devices, and computer peripherals, among ARM, MIPS, and X86 devices. He also created desktop and backend solutions, targeting Linux, Windows, MacOS, FreeBSD, zOS, GCP, AWS, and Azure DevOps. Heitor holds a Computer Science BSc. degree, and he also plays with Cryptography, AI, Computer Graphics, Music, Literature and Filming.
+[Heitor Peralles](mailto:heitorgp@gmail.com) is a cross-platform C++ developer with more than 20 years of experience. He started working with embedded systems in 2009 and has known C++ since 2001. He has been programming since the age 12 and describes himself as passionate about the art of computer programming. He was responsible for several C++ projects related to IoTs, Digital TVs, surveillance cameras, healthcare equipment, POS devices, and computer peripherals, among ARM, MIPS, and X86 devices. He also created desktop and backend solutions, targeting Linux, Windows, MacOS, FreeBSD, zOS, GCP, AWS, and Azure DevOps. Heitor holds a Computer Science BSc. degree, and he also plays with Cryptography, AI, Computer Graphics, Music, Literature and Filming.

@@ -19,3 +19,10 @@ environment_setup_script=$(ls -t *environment-setup* | head -n 1)
 source "$environment_setup_script"
 
 cd "$initial_directory"
+
+# Printing some of the created variables:
+echo $AS
+echo $LD
+echo $CC
+echo $CXX
+echo $CPP

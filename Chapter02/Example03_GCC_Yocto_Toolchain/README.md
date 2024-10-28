@@ -17,9 +17,8 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
 * `step07_build_the_toolchain.sh`: Script to build the Yocto Toolchain
 * `step08_install_the_toolchain.sh`: Script to build the Yocto Toolchain
-* `step09_apply_toolchain_to_path.sh`: Script to apply GCC to the PATH
-* `step10a_compile_the_source.sh`: Script to compile the source for Jetson Nano
-* `step10b_compile_the_source.sh`: Script to compile the source for Raspberry Pi
+* `step09_apply_toolchain_to_path.sh`: Script to apply Toolchain variables to the PATH
+* `step10_compile_the_source.sh`: Script to compile the source using the Toolchain g++
 * `step11_validate_the_binary.sh`: Script to validate the binary
 
 ## Instructions
@@ -34,8 +33,8 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 6. Run `source step06a_add_layer_jetson.sh` to add Jetson Nano hardware layer
 7. Run `source step07_build_the_image.sh` to build the Toolchain
 8. Run `source step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `source step09_apply_toolchain_to_path.sh` to make ARM g++ available
-10. Run `source step10a_compile_the_source.sh` to compile the source using the Toolchain g++
+9. In a new terminal session, run `source step09_apply_toolchain_to_path.sh` to make ARM g++ available
+10. Run `source step10_compile_the_source.sh` to compile the source using the Toolchain g++
 11. Run `source step11_validate_the_binary.sh` to validate the binary
 
 ### Building for Raspberry Pi:
@@ -48,8 +47,8 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 6. Run `source step06b_add_layer_raspberry.sh` to add Raspberry Pi hardware layer
 7. Run `source step07_build_the_image.sh` to build the Toolchain
 8. Run `source step08_install_the_toolchain.sh` to install the Toolchain
-9. Run `source step09_apply_toolchain_to_path.sh` to make ARM g++ available
-10. Run `source step10b_compile_the_source.sh` to compile the source using the Toolchain g++
+9. In a new terminal session, run `source step09_apply_toolchain_to_path.sh` to make ARM g++ available
+10. Run `source step10_compile_the_source.sh` to compile the source using the Toolchain g++
 11. Run `source step11_validate_the_binary.sh` to validate the binary
 
 ## Recommendations
@@ -62,4 +61,8 @@ Check Yocto documentation system requirements to ensure that your environment is
 
 You may need to change the path or name of the toolchain install script. Check the `step08_install_the_toolchain.sh` in case of errors.
 
-Find out more information about the Toolchain compiler by running `which g++` and `g++ --version`.
+Find out more information about the Toolchain compiler by running `$CXX --version` after calling `step09_apply_toolchain_to_path.sh`.
+
+You should run `step09_apply_toolchain_to_path.sh` in a new terminal session, because the variables of the toolchain `environment-setup` script conflicts with the `oe-init-build-env` (from `step04_build_environment.sh`).
+
+Also, you should always run `step09_apply_toolchain_to_path.sh` before compiling, because the `$CXX` variable with the `g++` compiler is set through the `environment-setup` script being called in this step.

@@ -2,7 +2,7 @@
 
 This is the code [repository](https://github.com/PacktPublishing/Embedded-Systems-Programming-with-Cxx) for<br>
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
-**Learning from scratch to configure, develop, test and monitor**
+**Learning from scratch to configure, develop, test and monitor.**
 
 ## What is this book about?
 

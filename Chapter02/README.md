@@ -1,5 +1,9 @@
 # Embedded Systems Programming with C++
 
+This is part of the code [repository](https://github.com/PacktPublishing/Embedded-Systems-Programming-with-Cxx) for<br>
+**Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
+**Learning from scratch to configure, develop, test and monitor.**
+
 This folder contains examples from **Chapter 2: Setting up the C++ cross-compilation environment**.
 
 ## Examples

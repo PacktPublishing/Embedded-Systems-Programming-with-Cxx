@@ -1,5 +1,9 @@
 # Embedded Systems Programming with C++
 
+This is part of the code [repository](https://github.com/PacktPublishing/Embedded-Systems-Programming-with-Cxx) for<br>
+**Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
+**Learning from scratch to configure, develop, test and monitor.**
+
 Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**) from Chapter01.
 
 ## Files

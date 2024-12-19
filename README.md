@@ -61,23 +61,26 @@ With the following software and hardware list you can run all code files present
 
 | Chapters                        | Hardware Required
 | ------------------------------- | ----------------------------------------------------------------- |
-| 1, 2, 3                         | Linux workstation (or Mac/Windows/BSD with proper configuration)  |
-| 1, 2                            | Raspberry Pi, NVIDIA Jetson Nano, or compatible SoC / MCU board   |
+| 1, 2, 3, 4, 5                   | Linux workstation (or Mac/Windows/BSD with proper configuration)  |
+| 1, 2, 4                         | Raspberry Pi, NVIDIA Jetson Nano, or compatible SoC / MCU board   |
 
-| Chapters                        | Software Required             |
-| ------------------------------- | ----------------------------- |
-| 1                               | Raspberry Pi OS (Raspbian)    |
-| 1                               | NVIDIA Jetson Nano Dev Kit    |
-| 1, 2                            | YOCTO dependencies            |
-| 2, 3                            | GCC                           |
-| 2, 3                            | GNU ARM Toolchains            |
-| 2                               | Docker                        |
-| 2                               | QEMU                          |
-| 3                               | Make                          |
-| 3                               | CMake                         |
-| 3                               | Ninja                         |
-| 3                               | Conan                         |
-| 3                               | glog (Google Logging library) |
+| Chapters                        | Software Required                   |
+| ------------------------------- | ------------------------------------|
+| 1                               | Raspberry Pi OS (Raspbian)          |
+| 1                               | NVIDIA Jetson Nano Dev Kit          |
+| 1, 2, 4, 5                      | YOCTO (dependencies)                |
+| 2, 3, 5                         | GCC                                 |
+| 2, 3                            | GNU ARM Toolchains                  |
+| 2                               | Docker                              |
+| 2                               | QEMU                                |
+| 3                               | Make                                |
+| 3, 5                            | CMake                               |
+| 3, 5                            | Ninja                               |
+| 3, 5                            | Conan                               |
+| 3                               | glog (Google Logging library)       |
+| 5                               | SQLite                              |
+| 5                               | Nlohmann (JSON library)             |
+| 5                               | Protobuf (Google Protocol Buffers)  |
 
 **Note:** The listed software may require additional dependencies, so please check the corresponding official website for each one.
 

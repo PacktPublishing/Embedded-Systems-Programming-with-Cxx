@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example02 (**Creating an Yocto distribution with CMake**) from Chapter01.
+Files related to **Example02** (Creating an Yocto distribution with CMake)
+<br>From **Chapter01** (Embedded devices and operating systems set up).
 
 ## Files
 
@@ -20,6 +21,8 @@ Files related to Example02 (**Creating an Yocto distribution with CMake**) from 
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
 * `step07_add_cmake.sh`: Script append add CMake app to the distribution
 * `step08_build_the_image.sh`: Script to build the image
+* `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

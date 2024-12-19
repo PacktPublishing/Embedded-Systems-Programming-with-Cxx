@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example01 (**Creating an Yocto distribution with SSH**) from Chapter04.
+Files related to **Example01** (Creating an Yocto distribution with SSH)
+<br>From **Chapter04** (Configuring the embedded device local access and deploy).
 
 ## Files
 
@@ -24,6 +25,8 @@ Files related to Example01 (**Creating an Yocto distribution with SSH**) from Ch
 * `step10_add_ssh_server.sh`: Script append add SSH-server features to the distribution
 * `step11_enable_ssh.sh`: Script to enable SSH in the distribution
 * `step12_build_the_image.sh`: Script to build the image
+* `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

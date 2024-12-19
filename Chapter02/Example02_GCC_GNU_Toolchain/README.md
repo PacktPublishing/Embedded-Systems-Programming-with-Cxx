@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example01 (**Compiling C++ with GNU ARM Toolchain**) from Chapter02.
+Files related to **Example01** (Compiling C++ with GNU ARM Toolchain)
+<br>From **Chapter02** (Setting up the C++ cross-compilation environment).
 
 ## Files
 
@@ -17,6 +18,7 @@ Files related to Example01 (**Compiling C++ with GNU ARM Toolchain**) from Chapt
 * `step03a_validate_jetson_binary.sh:` Script to validate Jetson Nano binary
 * `step03b_validate_raspberry_binary.sh:` Script to validate Raspberry Pi binary
 * `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ### Building for Jetson Nano:
 

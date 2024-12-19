@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example05 (**Setting QEMU and compiling C++ on the Virtual Machine**) from Chapter02.
+Files related to **Example05** (Setting QEMU and compiling C++ on the Virtual Machine)
+<br>From **Chapter02** (Setting up the C++ cross-compilation environment).
 
 ## Files
 
@@ -18,6 +19,7 @@ Files related to Example05 (**Setting QEMU and compiling C++ on the Virtual Mach
 * `step06_compile_the_source.sh:` Script to compile the source
 * `step07_execute_the_binary.sh:` Script to execute the binary 
 * `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example01 (**Creating an Yocto distribution**) from Chapter01.
+Files related to **Example01** (Creating an Yocto distribution)
+<br>From **Chapter01** (Embedded devices and operating systems set up).
 
 ## Files
 
@@ -19,6 +20,8 @@ Files related to Example01 (**Creating an Yocto distribution**) from Chapter01.
 * `step06a_add_layer_jetson.sh`: Script to add Jetson Nano hardware layer
 * `step06b_add_layer_raspberry.sh`: Script to add Raspberry Pi hardware layer
 * `step07_build_the_image.sh`: Script to build the image
+* `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

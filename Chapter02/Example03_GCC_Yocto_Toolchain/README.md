@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) from Chapter02.
+Files related to **Example03** (Compiling C++ with (generated) Yocto Toolchain)
+<br>From **Chapter02** (Setting up the C++ cross-compilation environment).
 
 ## Files
 
@@ -24,6 +25,8 @@ Files related to Example03 (**Compiling C++ with (generated) Yocto Toolchain**) 
 * `step09_apply_toolchain_to_path.sh`: Script to apply Toolchain variables to the PATH
 * `step10_compile_the_source.sh`: Script to compile the source using the Toolchain g++
 * `step11_validate_the_binary.sh`: Script to validate the binary
+* `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

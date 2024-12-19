@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**) from Chapter01.
+Files related to **Example03** (Creating an Yocto distribution with OpenEmbedded)
+<br>From **Chapter01** (Embedded devices and operating systems set up).
 
 ## Files
 
@@ -23,6 +24,8 @@ Files related to Example03 (**Creating an Yocto distribution with OpenEmbedded**
 * `step09_add_layer_python.sh`: Script to add Python layer from Open Embedded project
 * `step10_add_python.sh`: Script append add Python app to the distribution
 * `step11_build_the_image.sh`: Script to build the image
+* `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

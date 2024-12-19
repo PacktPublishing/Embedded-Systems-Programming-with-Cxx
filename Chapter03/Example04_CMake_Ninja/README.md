@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example04 (**CMake C++ project with Glog using Conan and Ninja**) from Chapter03.
+Files related to **Example04** (CMake C++ project with Glog using Conan and Ninja)
+<br>From **Chapter03** (Designing the C++ embedded application build process).
 
 ## Files
 
@@ -18,6 +19,7 @@ Files related to Example04 (**CMake C++ project with Glog using Conan and Ninja*
 * `step04_build_the_project.sh`: Script to build the project
 * `step05_execute_the_binary.sh`: Script to execute the binary
 * `.gitignore`: List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

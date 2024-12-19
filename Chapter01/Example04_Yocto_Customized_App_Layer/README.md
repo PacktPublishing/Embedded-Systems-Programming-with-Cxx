@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example04 (**Creating an Yocto distribution with a custom App layer**) from Chapter01.
+Files related to **Example04** (Creating an Yocto distribution with a custom App layer)
+<br>From **Chapter01** (Embedded devices and operating systems set up).
 
 ## Files
 
@@ -27,6 +28,8 @@ Files related to Example04 (**Creating an Yocto distribution with a custom App l
 * `step12_add_custom_app.sh`: Script append add example app to the distribution
 * `step13_build_the_app.sh`: Script to build the app
 * `step14_build_the_image.sh`: Script to build the image
+* `.gitignore:` List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

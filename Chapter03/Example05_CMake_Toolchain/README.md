@@ -4,7 +4,8 @@ This is part of the code [repository](https://github.com/PacktPublishing/Embedde
 **Embedded Systems Programming with C++** by [Packt Publishing](https://www.packtpub.com/)<br>
 **Learning from scratch to configure, develop, test and monitor.**
 
-Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and ARM Toolchain**) from Chapter03.
+Files related to **Example05** (CMake C++ project with Glog using Conan, Ninja and ARM Toolchain)
+<br>From **Chapter03** (Designing the C++ embedded application build process).
 
 ## Files
 
@@ -32,6 +33,7 @@ Files related to Example05 (**CMake C++ project with Glog using Conan, Ninja and
 * `step05b_validate_jetson_binary.sh`: Script to validate Jetson Nano binary
 * `step05c_validate_raspberry_binary.sh`: Script to validate Raspberry Pi binary
 * `.gitignore`: List of files and folders that should be ignored by Git
+* `LICENSE`: License file
 
 ## Instructions
 

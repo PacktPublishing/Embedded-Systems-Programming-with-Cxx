@@ -1,0 +1,4 @@
+**/build
+CMakeUserPresets.json
+*.pb.cc
+*.pb.h

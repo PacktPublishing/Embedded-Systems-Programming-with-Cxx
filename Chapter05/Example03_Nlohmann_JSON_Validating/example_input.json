@@ -1,0 +1,11 @@
+{
+	"deviceId": "jetson0001",
+	"isActive": "true",
+	"batteryLevel": 15.0,
+  	"currentLocation": {
+		"latitude": 2.425230,
+		"longitude": -23.105093
+  	},
+	"lastErrorMessage": null,
+	"allowedOperations": ["view", "add", "delete"]
+}

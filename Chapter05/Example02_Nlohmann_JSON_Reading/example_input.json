@@ -1,0 +1,11 @@
+{
+	"deviceId": "jetson0001",
+	"isActive": true,
+	"batteryLevel": 5,
+  	"currentLocation": {
+		"latitude": 2.425230,
+		"longitude": -23.105093
+  	},
+	"lastErrorMessage": "Warning, critical battery level (5%)",
+	"allowedOperations": ["view", "add", "delete"]
+}

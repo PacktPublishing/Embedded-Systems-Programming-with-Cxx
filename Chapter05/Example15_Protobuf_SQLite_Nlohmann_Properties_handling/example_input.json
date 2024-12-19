@@ -1,0 +1,3 @@
+{
+	"allowedOperations": ["view", "add", "delete"]
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ example_source.cpp example_model.pb.cc -o example_binary -lprotobuf

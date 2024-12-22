@@ -1,7 +1,7 @@
 {
 	"deviceId": "jetson0001",
-	"isActive": "true",
-	"batteryLevel": 15.0,
+	"isActive": true,
+	"batteryLevel": 15,
   	"currentLocation": {
 		"latitude": 2.425230,
 		"longitude": -23.105093

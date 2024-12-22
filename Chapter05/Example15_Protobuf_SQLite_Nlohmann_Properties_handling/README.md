@@ -41,9 +41,11 @@ Run `step00_clean_build_files.sh` to completely clean the build process if you w
 
 Analyze the commands written in the `.sh` files.
 
-Try changes to the `example_source.cpp`, build and run the project again, then analyze the generated `example_output.json`.
+Run the program twice, to see the difference while reading the database.
 
-Check the software versions in your system by running: `gcc --version`, `cmake --version`  and `ninja --version`.
+Try changing all input files and the source to see different results.
+
+Check the software versions in your system by running: `gcc --version`, `cmake --version`, `ninja --version` and `sqlite3 --version`.
 
 ## License
 

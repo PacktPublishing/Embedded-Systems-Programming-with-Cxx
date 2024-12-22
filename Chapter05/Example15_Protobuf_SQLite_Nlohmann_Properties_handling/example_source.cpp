@@ -24,7 +24,7 @@ void printLocalProperty() {
 /**
  * Updates the local database with the current values of [allowedOperationsProperty].
  */
-void updateLocalDatabase() {
+void updateSQLiteDatabase() {
     std::cout << "Updating SQLite database entries..." << std::endl;
     std::string databaseFileName = "../example_data.db";
     sqlite3* databasePointer = nullptr;
@@ -99,7 +99,7 @@ void updateLocalDatabase() {
  * Tries to open the SQLite database and search for [allowedOperations] entry.
  * If present, updates the global variable [allowedOperationsProperty].
  */
-void readLocalDatabase() {
+void readSQLiteDatabase() {
     std::cout << "Searching for SQLite database entries..." << std::endl;
     std::string databaseFileName = "../example_data.db";
     sqlite3* databasePointer = nullptr;
@@ -141,7 +141,7 @@ void readLocalDatabase() {
  * Tries to open the JSON file and search for [allowedOperations] field.
  * If present, updates the global variable [allowedOperationsProperty].
  */
-void searchForJsonInput() {
+void readJsonConfigurationFile() {
     std::cout << "Searching for JSON input..." << std::endl;
     std::string filePath("../example_input.json");
     std::ifstream fileStream(filePath);
@@ -168,17 +168,25 @@ void searchForJsonInput() {
     allowedOperationsProperty.clear();
     auto allowedOperations = jsonData["allowedOperations"];
     for (const auto& allowedOperation : allowedOperations) {
+        if (allowedOperation.is_null()) {
+            std::cerr << "Item from [allowedOperations] is on null" << std::endl;
+            return;
+        }
+        if (!allowedOperation.is_string()) {
+            std::cerr << "Item from [allowedOperations] is not a string" << std::endl;
+            return;
+        }
         allowedOperationsProperty.push_back(allowedOperation);
     }
     printLocalProperty();
-    updateLocalDatabase();
+    updateSQLiteDatabase();
 }
 
 /**
  * Tries to open the Protobuf message and search for [allowedOperations] field.
  * If present, updates the global variable [allowedOperationsProperty].
  */
-void searchForProtobufInput() {
+void readProtobufMessageFile() {
     std::cout << "Searching for Protobuf input..." << std::endl;
     std::string filePath("../example_input.bin");
     std::ifstream fileStream(filePath);
@@ -197,7 +205,7 @@ void searchForProtobufInput() {
         allowedOperationsProperty.push_back(allowedOperation);
     }
     printLocalProperty();
-    updateLocalDatabase();
+    updateSQLiteDatabase();
 }
 
 /**
@@ -205,8 +213,8 @@ void searchForProtobufInput() {
  */
 int main(int argc, char* argv[]) {
     printLocalProperty();
-    readLocalDatabase();
-    searchForJsonInput();
-    searchForProtobufInput();
+    readSQLiteDatabase();
+    readJsonConfigurationFile();
+    readProtobufMessageFile();
     return 0;
 }

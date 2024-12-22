@@ -53,8 +53,14 @@ int main(int argc, char* argv[]) {
     if (jsonData["batteryLevel"].is_null()) {
         std::cerr << "Content of [batteryLevel] is on null" << std::endl;
     }
+    else if (!jsonData["batteryLevel"].is_number()) {
+        std::cerr << "Content of [batteryLevel] is not a number" << std::endl;
+    }
     else if (!jsonData["batteryLevel"].is_number_integer()) {
         std::cerr << "Content of [batteryLevel] is not an integer number" << std::endl;
+    }
+    else if (!jsonData["batteryLevel"].is_number_unsigned()) {
+        std::cerr << "Content of [batteryLevel] is not an unsigned integer" << std::endl;
     }
     else {
         int batteryLevel = jsonData["batteryLevel"];
@@ -80,18 +86,24 @@ int main(int argc, char* argv[]) {
         else if (!currentLocation["latitude"].is_number()) {
             std::cerr << "Content of [currentLocation[latitude]] is not a number" << std::endl;
         }
+        else if (!currentLocation["latitude"].is_number_float()) {
+            std::cerr << "Content of [currentLocation[latitude]] is not a floating-point number" << std::endl;
+        }
         else {
             double currentLocationLatitude = currentLocation["latitude"];
             std::cout << "Content of [currentLocation[latitude]]: " << currentLocationLatitude << std::endl;
         }
 
-        //currentLocation[longitude]
+        // currentLocation[longitude]
 
         if (currentLocation["longitude"].is_null()) {
             std::cerr << "Content of [currentLocation[longitude]] is on null" << std::endl;
         }
         else if (!currentLocation["longitude"].is_number()) {
             std::cerr << "Content of [currentLocation[longitude]] is not a number" << std::endl;
+        }
+        else if (!currentLocation["longitude"].is_number_float()) {
+            std::cerr << "Content of [currentLocation[longitude]] is not a floating-point number" << std::endl;
         }
         else {
             double currentLocationLongitude = currentLocation["longitude"];
@@ -122,11 +134,17 @@ int main(int argc, char* argv[]) {
     }
     else {
         auto allowedOperations = jsonData["allowedOperations"];
-        std::cout << "Content of [allowedOperations]:";
         for (const auto& allowedOperation : allowedOperations) {
-            std::cout << " " << allowedOperation;
+            if (allowedOperation.is_null()) {
+                std::cerr << "Item from [allowedOperations] is on null" << std::endl;
+                continue;
+            }
+            if (!allowedOperation.is_string()) {
+                std::cerr << "Item from [allowedOperations] is not a string" << std::endl;
+                continue;
+            }
+            std::cout << "Item from [allowedOperations]: " << allowedOperation << std::endl;
         }
-        std::cout << std::endl;
     }
 
     return 0;

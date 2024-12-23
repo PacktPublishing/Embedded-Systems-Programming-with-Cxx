@@ -176,7 +176,7 @@ void fillAllowedOperationsTable() {
     }
 
     std::string allowedOperations[] = {"view", "add", "delete"};
-    for (std::string allowedOperation : allowedOperations) {
+    for (auto allowedOperation : allowedOperations) {
         
         sqlite3_bind_text(statement, 1, allowedOperation.c_str(), -1, SQLITE_STATIC);
 

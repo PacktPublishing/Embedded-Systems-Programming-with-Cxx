@@ -80,7 +80,7 @@ void updateSQLiteDatabase() {
                   << std::endl;
         return;
     }
-    for (std::string allowedOperation : allowedOperationsProperty) {
+    for (auto allowedOperation : allowedOperationsProperty) {
         sqlite3_bind_text(statement, 1, allowedOperation.c_str(), -1, SQLITE_STATIC);
         if (sqlite3_step(statement) != SQLITE_DONE) {
             std::cerr << "Problem executing statement for AllowedOperations table: " 

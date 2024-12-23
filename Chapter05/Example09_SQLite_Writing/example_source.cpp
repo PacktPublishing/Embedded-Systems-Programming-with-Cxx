@@ -151,7 +151,7 @@ void createAllowedOperationsTable() {
 void fillAllowedOperationsTable() {
 
     std::string allowedOperations[] = {"view", "add", "delete"};
-    for (std::string allowedOperation : allowedOperations) {
+    for (auto allowedOperation : allowedOperations) {
         
         std::string insertAllowedOperationSQL = 
         "INSERT INTO AllowedOperations (allowedOperation)"

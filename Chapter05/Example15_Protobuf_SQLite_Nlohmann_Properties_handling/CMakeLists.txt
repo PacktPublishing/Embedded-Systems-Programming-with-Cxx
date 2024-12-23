@@ -16,7 +16,7 @@ protobuf_generate_cpp(PROTO_SRC PROTO_HDR example_model.proto)
 
 include_directories(${CMAKE_BINARY_DIR}) # so the source can find the generated example_model.pb.h
 
-add_executable(example_binary example_source.cpp ${PROTO_SRC} ${PROTO_HDR})
+add_executable(example_binary example_source.cpp ${PROTO_SRC})
 
 target_link_libraries(example_binary    protobuf::libprotobuf
                                         SQLite::SQLite3

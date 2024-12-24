@@ -1,8 +1,0 @@
-[requires]
-sqlite3/3.43.2
-protobuf/3.21.12
-nlohmann_json/3.11.3
-
-[generators]
-CMakeDeps
-CMakeToolchain

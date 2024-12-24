@@ -67,10 +67,10 @@ void readDeviceTable() {
     while (sqlite3_step(statement) == SQLITE_ROW) {
         
         auto deviceId = reinterpret_cast<const char*>(sqlite3_column_text(statement, 0));
-        int isActive = sqlite3_column_int(statement, 1);
-        int batteryLevel = sqlite3_column_int(statement, 2);
-        double currentLocationLatitude = sqlite3_column_double(statement, 3);
-        double currentLocationLongitude = sqlite3_column_double(statement, 4);
+        auto isActive = sqlite3_column_int(statement, 1);
+        auto batteryLevel = sqlite3_column_int(statement, 2);
+        auto currentLocationLatitude = sqlite3_column_double(statement, 3);
+        auto currentLocationLongitude = sqlite3_column_double(statement, 4);
         auto lastErrorMessage = reinterpret_cast<const char*>(sqlite3_column_text(statement, 5));
 
         std::cout << "Column [deviceId]: " << (deviceId ? deviceId : "NULL") << std::endl;
